@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Sectors</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }​
+    </style>
+</head>
+<body>
+<div>
+    <p>Please enter your name and pick the Sectors you are currently involved in.</p>
+    <p>
+        <label for="nameInput">Name:</label>
+        <input id="nameInput" type="text">
+    </p>
+    <p>
+        <label for="sectorSelectbox">Sectors:</label>
+        <select multiple size="5" id="sectorSelectbox"></select>
+    </p>
+    <p>
+        <label for="agreeToTermsCheckbox">Agree to terms:</label>
+        <input id="agreeToTermsCheckbox" type="checkbox">
+    </p>
+    <input id="userId" type="hidden">
+    <button onclick="saveUserData()">Save</button>
+    <div id="errors" style="color: red;"></div>
+    <div id="messages" style="color: green;"></div>
+</div>
+</body>
+</html>
